@@ -233,7 +233,7 @@ async def main():
         logger.info('connecting mqtt %s@%s', user_config.mqtt_user, user_config.mqtt_broker)
         # paho_monkey_patch()
         mqtt_client = paho.Client()
-        mqtt_client.enable_logger(logger)
+        #mqtt_client.enable_logger(logger)
         if user_config.get('mqtt_user', None):
             mqtt_client.username_pw_set(user_config.mqtt_user, user_config.mqtt_password)
 

@@ -1,4 +1,4 @@
-name: "Batmon"
+name: "Batmon vks"
 description: "Monitor various BMS over bluetooth - vikstech"
 url: https://github.com/fl4p/batmon-ha
 version: "1.77"
@@ -28,8 +28,8 @@ discovery:
 
 options:
   devices:
-    - address: D6:6C:0A:61:14:30
-      type: sok
+    - address: 10:A5:62:17:2A:DF
+      type: jbd
       alias: battery1
   concurrent_sampling: false
   keep_alive: true

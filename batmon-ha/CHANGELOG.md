@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.77] - 2024-02-14
+* fixed mqtt
+
 ## [1.76] - 2024-01-17
 * Add JK Balance switch
 * allow forward slash `/` in mqtt topic prefix
