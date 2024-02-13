@@ -1,0 +1,34 @@
+name: "influxdb-udp-relay"
+description: "Receives points in UDP line protocol and forwards to InfluxDB v1 HTTP API"
+version: "0.12"
+slug: "influxdb-udp-relay"
+init: false
+host_network: true
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+#host_dbus: true
+#services:
+#  - mqtt:need
+
+map:
+  - config:ro
+
+options:
+  udp_port: 8086
+  additional_servers: []
+
+
+schema:
+  udp_port: "int"
+  log_points: "bool?"
+  additional_servers:
+    - host: str
+      port: "int(1,65535)?"
+      ssl: bool?
+      username: str
+      password: str
+      database: str
